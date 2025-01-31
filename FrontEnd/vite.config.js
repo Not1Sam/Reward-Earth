@@ -6,9 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     allowedHosts: [
-      'reward-earth.bungus.fyi' // Add your domain here
+      'reward-earth.bungus.fyi'
     ],
-    host: true, // Optional: Allow external access
-    port: 5173 // Optional: Define the port (or use the default)
+    host: true,
+    port: 5173
   },
 })

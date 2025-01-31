@@ -1,4 +1,5 @@
-import SwitchTheme from './theme-switch.jsx';
+import React from 'react';
+import SwitchTheme from '../Components/theme-switch.jsx';
 import Form from '../Components/Form.jsx';
 
 const Login = () => {
