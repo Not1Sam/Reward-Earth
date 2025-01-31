@@ -1,0 +1,195 @@
+/* Color Palette */
+:root {
+    --deep-blue: #0E6286;
+    --teal-green: #0E9183;
+    --soft-beige: #EBE4DC;
+    --vibrant-green: #0e975e;
+    --dark-navy-blue: #001B48;
+    --bright-cyan-blue: #018ABE;
+    --soft-light-blue: #97CADB;
+    --pale-sky-blue: #D6E8EE;
+
+    --light-gray: #eaeaea;
+    --gray: #676767;
+    --dark-gray: #797979;
+    --white: #ffffff;
+
+    /* Dark Theme Colors */
+    --dark-bg: #1a1a1a;
+    --dark-card: #2a2a2a;
+    --dark-text: #e0e0e0;
+    --dark-highlight: #09B66D;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.text {
+    color: var(--vibrant-green);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background: var(--vibrant-green);
+    border-radius: 9px;
+}
+
+/* Input Section */
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    height: 80px;
+    background: var(--light-gray);
+    border-radius: 6px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.input img {
+    margin-right: 20px;
+}
+
+.input input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--dark-gray);
+    font-size: 19px;
+    box-sizing: border-box;
+}
+
+/* Forgot Password */
+.forgot-password {
+    padding-left: 20px;
+    margin-top: 27px;
+    color: var(--dark-gray);
+    font-size: 18px;
+}
+
+.forgot-password a {
+    color: var(--vibrant-green);
+    cursor: pointer;
+}
+
+/* Submit Section */
+.submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 69px;
+    color: var(--white);
+    background: var(--vibrant-green);
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.gray {
+    background: var(--light-gray);
+    color: var(--gray);
+}
+
+.Name{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    font-weight: 550;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:var(--vibrant-green);
+    margin: 30px;
+    margin-bottom: 20px;
+    
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+
+    .input {
+        height: 60px;
+        max-width: 100%;
+    }
+
+    .input input {
+        font-size: 16px;
+    }
+
+    .submit {
+        width: 180px;
+        height: 60px;
+    }
+
+    .inputs {
+        gap: 20px;
+    }
+
+}
