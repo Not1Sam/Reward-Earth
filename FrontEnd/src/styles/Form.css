@@ -1,36 +1,187 @@
-.form-container {
+/* Color Palette */
+:root {
+    --deep-blue: #0E6286;
+    --teal-green: #0E9183;
+    --soft-beige: #EBE4DC;
+    --vibrant-green: #0e975e;
+    --dark-navy-blue: #001B48;
+    --bright-cyan-blue: #018ABE;
+    --soft-light-blue: #97CADB;
+    --pale-sky-blue: #D6E8EE;
+
+    --light-gray: #eaeaea;
+    --gray: #676767;
+    --dark-gray: #797979;
+    --white: #ffffff;
+
+    /* Dark Theme Colors */
+    --dark-bg: #1a1a1a;
+    --dark-card: #2a2a2a;
+    --dark-text: #e0e0e0;
+    --dark-highlight: #09B66D;
+}
+
+body{
+    background: var(--bg-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Title{
+    font-family: Arial, Helvetica, sans-serif;
+   justify-content: center;
+   text-align: center;
+   justify-self: center;
+   margin: 20px;
+   color: var(--vibrant-green);
+   font-size: 40px;
+   font-weight: 700;
+}
+
+.Underline {
+    display: flex;
+    justify-self: center;
+    width: 150px;
+    height: 6px;
+    background: var(--vibrant-green);
+    border-radius: 9px;
+    margin-bottom: 10px;
+}
+
+.Container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-  }
-  
-  .form-input {
+    margin: auto;
+    margin-top: 30px;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
     width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-  }
-  
-  .form-button {
-    width: 95%;
-    padding: 10px;
-    margin: 20px 0;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
+}
+
+.Inputs{
+    display: table;
+    align-self: center;
+    margin: 2px;
+    width: 100%;
+    max-width: 480%;
+    height: 80px;
+    background: var(--light-gray);
+    border-radius: 10px;
+    padding: 0 15px;
+
+}
+
+.Username {
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    height: 80px;
+    background: var(--light-gray);
+    border-radius: 6px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.Email {
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    height: 80px;
+    background: var(--light-gray);
+    border-radius: 6px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+
+.Pass {
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    height: 80px;
+    background: var(--light-gray);
+    border-radius: 6px;
+    padding: 0 20px;
+    box-sizing: border-box;
+   
+}
+
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    color: var(--gray);
+    font-size:19px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.Submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 69px;
+    color: var(--white);
+    background: var(--vibrant-green);
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .form-button:hover {
-    background-color: #0056b3;
-  }
+    transition: background 0.3s ease;
+}
+
+.Submit button{
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: transparent;
+    border: none;
+    color: var(--bg-color) ;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+
+    .input {
+        height: 60px;
+        max-width: 100%;
+    }
+
+    .input input {
+        font-size: 16px;
+    }
+
+    .submit {
+        width: 180px;
+        height: 60px;
+    }
+
+    .inputs {
+        gap: 20px;
+    }
+
+}

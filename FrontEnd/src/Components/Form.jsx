@@ -1,10 +1,13 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import api from '../api';
 import { useNavigate } from 'react-router-dom';
 import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constants';
+import "../styles/Form.css"
 
 function Form({ route, method }) {
     const [username, setUsername] = useState("");
+    const [email,setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
@@ -32,26 +35,51 @@ function Form({ route, method }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <h1>{name}</h1>
-            <input
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
-            />
-            <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-            />
-            <button type="submit" disabled={loading}>
-                {loading ? "Loading..." : name}
-            </button>
-        </form>
+        <div className='Container'>
+            <form onSubmit={handleSubmit}>
+                <div className = "Title">{name}</div >
+                <div className="Underline"></div>
+                <div className = "Inputs">
+                    <div className = "Username">
+                        <input
+                            type="text"
+                            placeholder="Enter Username"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
+                    </div>
+                    
+                    {method === "signup" && (
+                        <div className="Email">
+                            <input
+                                type="email"
+                                placeholder='Enter Email'
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required 
+                            />
+                        </div>
+                    )}
+
+                    <div className="Pass">
+                        <input
+                            type="password"
+                            placeholder="Enter Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                </div>
+                
+                <div className="Submit">
+                    <button type="submit" disabled={loading}>
+                        {loading ? "Loading..." : name}
+                    </button>
+                </div>
+            </form>
+        </div>
     );
 }
 
