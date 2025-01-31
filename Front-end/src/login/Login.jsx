@@ -1,5 +1,5 @@
 import React from 'react'
-import '.\\login.css'
+import './login.css'
 
 import user_icon from '../assets/person.png'
 import email_icon from '../assets/email.png'
