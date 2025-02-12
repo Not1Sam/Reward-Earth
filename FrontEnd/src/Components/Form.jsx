@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import api from '../api';
 import { useNavigate } from 'react-router-dom';
 import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constants';
-import "../styles/Form.css"
-import user_icon from '../assets/user.png'
-import email_icon from '../assets/email.png'
-import password_icon from '../assets/password.png'
+import "../styles/Form.css";
+import user_icon from '../assets/user.png';
+import email_icon from '../assets/email.png';
+import password_icon from '../assets/password.png';
+import ThemeContext from './ThemeContext';
 
 function Form({ route, method }) {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
-    const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+    const { theme } = useContext(ThemeContext);
     const navigate = useNavigate();
 
     const name = method === "login" ? "Login" : "Sign Up";
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem("theme");
-        setTheme(savedTheme || "light");
-    }, []);
+        document.documentElement.setAttribute('data-theme', theme);
+    }, [theme]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
