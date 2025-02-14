@@ -5,7 +5,7 @@ import { ACCESS_TOKEN } from '../constants';
 import '../styles/Home.css';
 
 function Home() {
-    const [Points, setPoints] = useState(0);
+    const [points, setPoints] = useState(0);
 
     useEffect(() => {
         const fetchPoints = async () => {
@@ -15,7 +15,7 @@ function Home() {
                         Authorization: `Bearer ${localStorage.getItem(ACCESS_TOKEN)}`
                     }
                 });
-                setPoints(response.data.Points);
+                setPoints(response.data.points);
             } catch (error) {
                 console.error(error);
             }
@@ -29,7 +29,9 @@ function Home() {
             <div className="home-container">
                 <h1>Welcome to Reward Earth</h1>
                 <div className="ShowPoints">
-                    <h2>Your Points: {Points}</h2>
+                    <h2>Your Points:
+                       <div className="Points"> {points} </div>
+                    </h2>
                 </div>
             </div>
         </div>
