@@ -38,17 +38,21 @@
 }
 
 .switch-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: center;
+    max-height: 100%;
+    max-width: 27%;
     display: flex;
+    margin-top: 5%;
+    margin-bottom:2%;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
+    justify-self: center;
     align-items: center;
+    align-self: center;
     background: var(--card-bg);
     color: var(--button-txt);
     padding: 10px 20px;
-    gap: 10px;
+    gap: 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: background 0.5s, color 0.5s;

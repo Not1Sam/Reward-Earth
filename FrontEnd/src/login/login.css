@@ -164,32 +164,3 @@ body {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        margin-top: 10px;
-        padding: 20px;
-    }
-
-    .text {
-        font-size: 36px;
-    }
-
-    .input {
-        height: 60px;
-        max-width: 100%;
-    }
-
-    .input input {
-        font-size: 16px;
-    }
-
-    .submit {
-        width: 180px;
-        height: 60px;
-    }
-
-    .inputs {
-        gap: 20px;
-    }
-
-}

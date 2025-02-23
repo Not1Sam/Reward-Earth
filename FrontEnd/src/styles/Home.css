@@ -1,0 +1,20 @@
+body{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    justify-self:center ;
+    align-items: center;
+    margin: 1%;
+    padding: 10%;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 10%;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}

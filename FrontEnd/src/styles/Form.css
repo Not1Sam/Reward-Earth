@@ -162,7 +162,7 @@ button {
 /* Responsive Design */
 @media (max-width: 768px) {
     .Container {
-        margin-top: 20px;
+        margin-top: 5%;
         width: 90%;
         max-width: 100%;
         padding: 20px;
