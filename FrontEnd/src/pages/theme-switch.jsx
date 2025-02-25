@@ -1,6 +1,7 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import "../styles/theme-switch.css";
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 
 const SwitchTheme = () => {
     const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -24,7 +25,7 @@ const SwitchTheme = () => {
 
     return (
         <div className="switch-button" onClick={toggleTheme}>
-            {isDarkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
+            {isDarkMode ? <MdDarkMode size={25}/> : <MdLightMode size={25}/>}
         </div>
     );
 };

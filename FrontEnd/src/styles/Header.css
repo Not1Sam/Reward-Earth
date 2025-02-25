@@ -1,4 +1,14 @@
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    margin-top:7%;
+    margin-left: 3%;
+    color: var(--text-color);
+}
+
 .points{
+    margin-left:19% ;
+    margin-right: 19%;
     position: center;
     display:flex;
     background-color: var(--card-bg);
@@ -12,5 +22,13 @@
 }
 
 .points img{
-    margin-right: 20%;
+    margin-right: 19%;
+}
+
+.pnt{
+    white-space: nowrap;
+}
+
+.qr-code{
+    margin-left:21%;
 }

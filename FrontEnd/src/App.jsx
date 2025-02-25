@@ -6,6 +6,9 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./Components/ProtectedRoute"
 import LostPass from "./pages/ForgotPassword.jsx"
+import Account from "./pages/Account.jsx"
+import BugReport from "./pages/Bug-Report.jsx"
+import PrivacyPol from "./pages/Privacy-Policy.jsx"
 import { ThemeProvider } from "./Components/ThemeContext.jsx"
 
 
@@ -37,6 +40,9 @@ function App() {
           <Route path="/signup" element={<RegisterAndLogout />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/forgotpass" element={<LostPass/>} />
+          <Route path="/privacy-policy" element={<PrivacyPol/>} />
+          <Route path="/account" element={<Account/>}/>
+          <Route path="/bug" element={<BugReport/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

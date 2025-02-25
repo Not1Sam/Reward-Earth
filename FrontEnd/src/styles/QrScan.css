@@ -1,0 +1,40 @@
+.qr-code {
+    cursor: pointer;
+}
+
+.qr-panel {
+    background-color: var(--card-bg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.qr-scan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.camera-view {
+    width: 100%;
+    height: auto; 
+    border: 2px ;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.camera-view video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qr-data {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+

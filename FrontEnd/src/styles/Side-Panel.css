@@ -1,0 +1,47 @@
+
+.side-panel {
+    background-color: var(--card-bg);
+    height: 100%;
+    width: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.side-panel-button{
+    position: relative;
+    justify-self: left;
+    color: var(--text-color);
+}
+
+.side-panel-content {
+    display: flex;
+    flex-direction: column;
+    margin-left:10%;
+    margin-right:10%;
+    padding: 20px;
+    white-space: nowrap;
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+.item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    justify-self:center ;
+    align-items: center;
+    margin: 9%;
+    padding: 10%;
+    border-radius: 20px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    white-space: nowrap;
+
+}
+
+.theme{
+    margin-top:40%;
+
+}
