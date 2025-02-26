@@ -1,6 +1,6 @@
 # Reward Earth
 
-    Reward Earth is a web application designed to incentivize and reward users for their eco-friendly actions. The application consists of a backend built with Django and a frontend built with React and Vite.
+Reward Earth is a web application designed to incentivize and reward users for their eco-friendly actions. The application consists of a backend built with Django and a frontend built with React and Vite.
 
 ## Features
 
@@ -16,24 +16,14 @@
 ### Backend
 
     The backend is built with Django and provides RESTful APIs for user management and points system.
-
-BackEnd/ ├── api/ │ ├── init.py │ ├── admin.py │ ├── apps.py │ ├── migrations/ │ ├── models.py │ ├── serializers.py │ ├── tests.py │ ├── urls.py │ └── views.py ├── backend/ │ ├── init.py │ ├── asgi.py │ ├── settings.py │ ├── urls.py │ └── wsgi.py ├── db.sqlite3 ├── dockerfile ├── manage.py └── requirements.txt
-
-
 ### Frontend
-
     The frontend is built with React and Vite, providing a responsive and interactive user interface.
-
-FrontEnd/ ├── .expo/ ├── public/ ├── src/ │ ├── api.js │ ├── App.css │ ├── App.jsx │ ├── Components/ │ ├── pages/ │ ├── styles/ │ ├── constants.js │ └── main.jsx ├── dockerfile ├── package.json ├── vite.config.js └── index.html
-
 ## Installation
-
 ### Backend
 
     1. Navigate to the [`BackEnd`](BackEnd ) directory:
-    ```sh
-    cd path/to/BackEnd
-
+        cd 'path/to/Backend'
+        
     2.Create a virtual environment and activate it:
         python -m venv env
         source env/bin/activate  # On Windows use `env\Scripts\activate`
@@ -50,7 +40,7 @@ FrontEnd/ ├── .expo/ ├── public/ ├── src/ │ ├── api.js
 ### Frontend
 
     1.Navigate to the FrontEnd directory:
-        cd path/to/FrontEnd
+        cd 'path/to/FrontEnd'
 
     2.Install the required dependencies:
         npm install
@@ -60,6 +50,7 @@ FrontEnd/ ├── .expo/ ├── public/ ├── src/ │ ├── api.js
 
 
 ## Usage
+ 
     1. Open your browser and navigate to http://localhost:5173 to access the frontend.
 
     2. Use the provided endpoints to interact with the backend API.
