@@ -33,7 +33,7 @@ const Scan = () => {
                     <div className="camera-view">
                         <Scanner
                             onScan={(result) => {
-                                console.log("Scanned QR Code:", result.rawValue);
+                                console.log("Scanned QR Code:", result);
                                 SetQrData(result.rawValue);
                             }}
                             onError={(error) => console.error(error)}
